@@ -19,6 +19,7 @@ public class SpringMvcInitializer extends AbstractAnnotationConfigDispatcherServ
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { "/" };
+		
 	}
 	
 }
