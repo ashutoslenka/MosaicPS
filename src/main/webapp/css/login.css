@@ -1,0 +1,62 @@
+#rectangle{
+	
+	background-color: transparent;
+    border-color: #99bbe8;
+    border-style: solid;
+    border-width: 2px;
+    color: #99bbe8;
+    height: 302px;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 346px;
+}
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4;
+    left: 100px;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fcd5b5 1%, #fcd5b5 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fcd5b5), color-stop(100%, #fcd5b5));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fcd5b5 1%, #fcd5b5 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fcd5b5 1%, #fcd5b5 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fcd5b5 1%, #fcd5b5 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #fcd5b5 1%, #fcd5b5 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcd5b5', endColorstr='#fcd5b5', GradientType=0);
+    /* IE6-9 */
+}
+#button{
+	 border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height:20px;
+    font-family: Tahoma;
+    background: #f4f4f4;
+    left: 100px;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e6b9b8 1%, #e6b9b8 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #e6b9b8), color-stop(100%, #e6b9b8));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e6b9b8 1%, #e6b9b8 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e6b9b8 1%, #e6b9b8 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e6b9b8 1%, #e6b9b8 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #e6b9b8 1%, #e6b9b8 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6b9b8', endColorstr='#e6b9b8', GradientType=0);
+    /* IE6-9 */
+}
