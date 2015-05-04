@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MainController {
 
-	@RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.POST)
+	@RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
 	public ModelAndView defaultPage() {
 
 		ModelAndView model = new ModelAndView();
@@ -24,7 +24,7 @@ public class MainController {
 
 	}
 
-	@RequestMapping(value = "/admin**", method = RequestMethod.POST)
+	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 
 		ModelAndView model = new ModelAndView();
@@ -36,12 +36,10 @@ public class MainController {
 
 	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout) {
-		
-		System.out.print("test bbbbbbbbbbbb");
-		
+						
 		ModelAndView model = new ModelAndView();
 		if (error != null) {
 			model.addObject("error", "Invalid username and password!");
@@ -57,7 +55,7 @@ public class MainController {
 	}
 	
 	//for 403 access denied page
-	@RequestMapping(value = "/403", method = RequestMethod.POST)
+	@RequestMapping(value = "/403", method = RequestMethod.GET)
 	public ModelAndView accesssDenied() {
 
 		ModelAndView model = new ModelAndView();

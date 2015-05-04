@@ -19,9 +19,9 @@ public class AppConfig {
 	public DriverManagerDataSource dataSource() {
 	    DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
 	    driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	    driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/test");
+	    driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/mosaicps_spring");
 	    driverManagerDataSource.setUsername("root");
-	    driverManagerDataSource.setPassword("password");
+	    driverManagerDataSource.setPassword("mindfire");
 	    return driverManagerDataSource;
 	}
 	
@@ -29,7 +29,7 @@ public class AppConfig {
 	public InternalResourceViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		viewResolver.setViewClass(JstlView.class);
-		viewResolver.setPrefix("/WEB-INF/pages/");
+		viewResolver.setPrefix("/WEB-INF/views/");
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
