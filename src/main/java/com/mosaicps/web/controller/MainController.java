@@ -74,5 +74,11 @@ public class MainController {
 		return model;
 
 	}
+	
+	@RequestMapping(value = "/UserRegistration", method = RequestMethod.GET)
+	public void userRegistrationPage(){
+		
+	}
+	
 
 }

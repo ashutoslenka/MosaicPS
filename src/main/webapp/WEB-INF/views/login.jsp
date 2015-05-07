@@ -22,7 +22,7 @@
 	
 	<input type="password" name="password" style="background-color:#BAB0B6;position: absolute; top: 300px; left: 615px;"><br>
 	<input name="submit" type="submit" value="Submit" style="position: absolute; top: 330px; left: 655px;">
-	<button id="button" type="button" style="position: absolute; top: 360px; left: 630px;">New Registration</button>
+	<button id="button" type="button" style="position: absolute; top: 360px; left: 630px;" onclick="window.location = 'UserRegistration'; return true;">New Registration</button>
 	<a href="http://www.w3schools.com/html/" style="color:#663300;font-size:12px;position: absolute; top: 390px; left: 645px;">Forgot your username ?</a>
 	<a href="http://www.w3schools.com/html/" style="color:#663300;font-size:12px;position: absolute; top: 410px; left: 645px;">Forgot your password ?</a>
 	<input type="hidden" name="${_csrf.parameterName}"

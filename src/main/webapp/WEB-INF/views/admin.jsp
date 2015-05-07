@@ -26,6 +26,5 @@
 </body>
 </html>
 
-	</sec:authorize>
 </body>
 </html>
