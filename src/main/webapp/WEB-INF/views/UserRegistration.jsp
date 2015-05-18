@@ -9,9 +9,9 @@
 	<style>
      	<%@ include file="../css/UserRegistration.css"%>
 	</style>
-
+		
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="jhttp://localhost:8081/app/js/jquery.js" type="text/javascript"></script>
+<script src="http://localhost:8081/app/js/jquery.js" type="text/javascript"></script>
 <script src="http://localhost:8081/app/js/jquery.maskedinput.js" type="text/javascript"></script>
 
 <script>
@@ -89,9 +89,6 @@
 	<span id="first" style="color:#cc6600;font-size:16px;position: absolute; top: 700px; left: 70px;">* - Required : </span>
 	
 	<input name="submit" type="submit" value="Continue" style="position: absolute; top: 700px; left: 190px;">
-	
-	
-	
-	
+			
 	
 </html>

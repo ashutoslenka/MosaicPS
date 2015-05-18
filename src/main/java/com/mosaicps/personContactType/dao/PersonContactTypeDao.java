@@ -6,7 +6,7 @@ import com.mosaicps.entities.PersonContactType;
 
 public interface PersonContactTypeDao {
 	
-	public void insert(PersonContactType buyingUser);
+	public void insert(PersonContactType personContactType);
 	
 	//Get All
     public List<PersonContactType> getAll();

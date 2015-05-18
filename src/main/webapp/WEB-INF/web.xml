@@ -23,6 +23,41 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CreatePersonContactType</display-name>
+		<servlet-name>CreatePersonContactType</servlet-name>
+		<servlet-class>com.mosaicps.common.controller.CreatePersonContactType</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Create</display-name>
+		<servlet-name>Create</servlet-name>
+		<servlet-class>com.mosaicps.common.controller.Create</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>createPersonContactType</display-name>
+		<servlet-name>createPersonContactType</servlet-name>
+		<servlet-class>com.mosaicps.common.controller.createPersonContactType</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>create</display-name>
+		<servlet-name>create</servlet-name>
+		<servlet-class>com.mosaicps.common.controller.create</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Creates</display-name>
+		<servlet-name>Creates</servlet-name>
+		<servlet-class>com.mosaicps.common.controller.Create</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
@@ -33,21 +68,36 @@
     	 <servlet-name>default</servlet-name>
        	 <url-pattern>*.jpg</url-pattern>
        	 <url-pattern>*.js</url-pattern>
+       	 <url-pattern>*.png</url-pattern>
     </servlet-mapping>
-    
-    <servlet>
-	    <servlet-name>Jersey REST Service</servlet-name>
-	    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-	     <!-- Register resources and providers under com.vogella.jersey.first package. -->
-	    <init-param>
-	        <param-name>jersey.config.server.provider.packages</param-name>
-	        <param-value>com.mosaicps.webservices</param-value>
-	    </init-param>
-    	<load-on-startup>1</load-on-startup>
-	</servlet>
 	<servlet-mapping>
-	    <servlet-name>Jersey REST Service</servlet-name>
-	    <url-pattern>/rest/*</url-pattern>
-	 </servlet-mapping>
-    			
+		<servlet-name>CreatePersonContactType</servlet-name>
+		<url-pattern>
+		/CreatePersonContactType</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Create</servlet-name>
+		<url-pattern>
+		/Create</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>createPersonContactType</servlet-name>
+		<url-pattern>
+		/createPersonContactType</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>create</servlet-name>
+		<url-pattern>
+		/create</url-pattern>
+		<url-pattern>
+		/personcontacttypes/create</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Creates</servlet-name>
+		<url-pattern>
+		/Creates</url-pattern>
+		<url-pattern>
+		/personcontacttypes/Creates</url-pattern>
+	</servlet-mapping>
+        			
 </web-app>

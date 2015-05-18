@@ -1,5 +1,9 @@
 package com.mosaicps.web.controller;
 
+import java.util.List;
+
+import javax.ws.rs.core.Response;
+
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -9,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.mosaicps.entities.PersonContactType;
+import com.mosaicps.personContactType.dao.PersonContactTypeDaoTemplate;
 
 @Controller
 public class MainController {
@@ -80,5 +87,14 @@ public class MainController {
 		
 	}
 	
+	@RequestMapping(value = "/PersonContactTypeList", method = RequestMethod.GET)
+	public void personContactTypePage(){
+		
+	}
+	
+	@RequestMapping(value = "/testGrid", method = RequestMethod.GET)
+	public void testGridPage(){
+		
+	}
 
 }
